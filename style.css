@@ -1,0 +1,190 @@
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #9ea7aa;
+  --accent-color: #cfd8dc;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navbar {
+  width: wh;
+  font-family: museomoderno;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--background-color); */
+  background-color: #0005;
+  padding: 2px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  /* filter: opacity(50%); */
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: white;
+}
+
+.navbar__logo i {
+  color: black;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li > a {
+  padding: 8px 12px;
+  display: block;
+}
+
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 8%;
+  transition: 800ms all;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__icons {
+  list-style: none;
+  display: flex;
+  color: black;
+}
+
+.navbar__icons i {
+  color: black;
+}
+
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: white;
+  transition: transform 300ms ease-in-out;
+}
+
+.navbar__toggleBtn.clicked {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  .navbar__toggleBtn {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
+
+.main_1 {
+  position: relative;
+  background-image: url(image/20180620_184810.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.img-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.greet {
+  font-family: balsamiq sans;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 꼭지점 기준으로 이동했으므로 */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+#about {
+  font-family: source sans pro;
+  z-index: 3;
+  background-color: #babdbe;
+}
+
+.row {
+  padding: 10% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  padding: 8px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image {
+  padding-right: 10px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.about-text {
+  color: black;
+}
+
+.container {
+  max-width: 400px;
+  background: darkgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: space-around;
+}
+
+@media screen and (min-width: 769px) {
+  .row {
+    flex-direction: row;
+  }
+}
