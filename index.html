@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js" defer></script>
+    <script src="clock.js" defer></script>
+    <script src="greeting.js" defer></script>
+    <script src="todo.js" defer></script>
   </head>
   <body>
     <nav class="navbar">
@@ -25,75 +28,321 @@
       </div>
       <ul class="navbar__menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Portfoilo</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a target="_blank" href="https://velog.io/@seob">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="navbar__icons">
         <li>
-          <a href="#"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://github.com/seobie"
+            ><i class="fab fa-github"></i><span>Github</span></a
+          >
         </li>
         <li>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" href="https://www.instagram.com/seob_ly/"
+            ><i class="fab fa-instagram"></i><span>Instagram</span></a
+          >
         </li>
         <li>
-          <a href="#"><i class="fas fa-at"></i></a>
+          <a href="#"><i class="fas fa-at"></i><span>Mail</span></a>
         </li>
       </ul>
-      <a href="#" class="navbar__toggleBtn">
+      <input type="checkbox" id="hamburgerCheck" />
+      <label for="hamburgerCheck" class="checkBtn">
         <i class="fas fa-bars"></i>
-      </a>
+      </label>
     </nav>
-
     <section class="main_1">
       <!-- <img src="image/20180620_184810.jpg" alt="" width="100%" /> -->
       <div class="greet">
         <h3>Hello, My Name Is</h3>
         <h1>Yeongseob Lee</h1>
-        <p>A Promising Back-End Developer</p>
-        <a href="#">KNOW MORE</a>
+        <div class="greetLine">
+          <p>A</p>
+          <div class="describeMyself">
+            <ul class="descriptionList">
+              <li>n Ambitious</li>
+              <li>Promising</li>
+              <li>Creative</li>
+              <li>n Ambitious</li>
+            </ul>
+          </div>
+          <p>Back-End Developer</p>
+          <div class="arrow-down">
+            <a href="#about">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="img-cover"></div>
     </section>
     <section id="about">
       <div class="row">
         <div class="about-image">
-          <img src="image/photo-1523049673857-eb18f1d7b578.jpg" alt="" />
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/34983125_247597539128934_6673853070260043776_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=LAc3N6Xi3XEAX8-HQCl&oh=fd13389b78a3ad1a65e4e8f0647aac0c&oe=5F1B44F5"
+            alt="me-walking-by-the-wall"
+          />
+          <video controls muted autoplay loop>
+            <source
+              src="https://scontent-gmp1-1.cdninstagram.com/v/t50.2886-16/57221981_369972506946857_3452874999173709393_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jYXJvdXNlbF9pdGVtLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=LPGb8rm8NekAX9f4RfR&vs=17919113284294347_2257342927&_nc_vs=HBksFQAYJEdGMGphUU1wYmRydmZGQUJBRkZfazRPRUVfc3Zia1lMQUFBRhUAAsgBABUAGCRHUGVNWndOd2NwbzNQM1FFQU5ZeFRzNVBYemN1YmtZTEFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMBUAABgAFtyY%2Bpyy%2F4RAFQIoAkMzLBdAJWFHrhR64RgSZGFzaF9iYXNlbGluZV8xX3YxEQB17gcA&_nc_rid=e0837aa3b3&oe=5EF4F6C9&oh=fa9b0b620862c14a05d6b73287d5ab4e"
+              type="video/mp4"
+            />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
         </div>
         <div class="column">
           <div class="about-text">
             <h3>About me</h3>
             <h2>Who Am I</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              facilis fuga necessitatibus tenetur, adipisci voluptatum omnis
-              assumenda sunt facere id nihil officiis quidem. Laboriosam culpa
-              placeat inventore molestias ratione unde?
+              코딩에 ㅋ 도 모르지만 개발자가 되어보려고 합니다. 백엔드에 관심이
+              있지만 이 페이지를 만들어보면서 프론트엔드도 재미있을것 같다고
+              느끼는 중입니다.. 😅
+              <br />여행다니는걸 좋아하고 먹는것도 좋아하지만 놀러가서 먹는건 더
+              좋습니다. 🐷
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-              accusantium fugiat magnam impedit odio non, quod dolorum excepturi
-              nulla eius facere aspernatur qui, commodi doloremque beatae
-              corporis soluta sapiente ullam.
+              위코드에서 좋은 인연, 기억, 실력 모두 만들어가고 싶습니다.🙆🏻‍♂️<br />저도
+              누군가에게 좋은 인연이 될 수 있도록 노력해보겠습니다.🙇🏻‍♂️
             </p>
           </div>
           <div class="container">
-            <div class="item item1"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item2"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item3"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item4"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item5"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item6"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item7"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item8"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
-            <div class="item item9"><h4>HTML</h4><p>⭐⭐⭐⭐⭐</p></div>
+            <div class="item item1">
+              <h4>HTML</h4>
+              <p>
+                <i class="fas fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="item item2">
+              <h4>CSS</h4>
+              <p>
+                <i class="fas fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="item item3">
+              <h4>JavaScript</h4>
+              <p>
+                <i class="fas fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="item item4">
+              <h4>Python</h4>
+              <p>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="item item5">
+              <h4>Django</h4>
+              <p>
+                <i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="item item6">
+              <h4>SQL</h4>
+              <p>
+                <i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="item item7">
+              <h4>English</h4>
+              <p>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i
+                ><i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="item item8">
+              <h4>Korean</h4>
+              <p>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </p>
+            </div>
+            <div class="item item9">
+              <h4>Sleep</h4>
+              <p>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </p>
+            </div>
           </div>
-          
-        </div>
         </div>
       </div>
+    </section>
+    <section id="favorites">
+      <h1 id="favHead">Favorites</h1>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69537685_472179446959742_1981188202956849315_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=n6AnYpmMscUAX9aThZ3&oh=ae3b2358af0d911dbc37eb02fb840cc0&oe=5F1D51D6"
+            alt="budapest"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/70538702_103725384325434_4333550303796371357_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=cRZ0f2AW2zMAX84eF4q&oh=58b908f54f9c482416ce83a40566ba12&oe=5F1A36B0"
+            alt="korea"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/39001803_1097034937127272_1915169987945824256_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=yuv9yg-4IgwAX9maom3&oh=6c5c4195d02b41c5166e451dba3c359c&oe=5F1A9652"
+            alt="iceland"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/27892302_341144386398946_5352141932195741696_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=UEM9pjxw6KYAX_TyYFf&oh=8043a0faf22ba29f7b330dc5f005b5e0&oe=5F1A5140"
+            alt="boracay"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/28429641_1555560914551478_147758144976584704_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=F7rzqu6uvmYAX_zSSQp&oh=dafb915bc697017bf16f6ff5a3b3abaf&oe=5F1B0690"
+            alt="bali"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/38508535_1339612032842830_2492926656436502528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=TxMIkyYmNDYAX8xzqMq&oh=1cd760c91f3f4e972e70fe598009a529&oe=5F1BF90E"
+            alt="iceland"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/58454096_1017336531989620_6924040740333967031_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=e4V4gPLeZsMAX93SwMd&oh=a95a0de1206110c5417a5d08df47f280&oe=5F1B23AA"
+            alt="kyoto"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/103629751_149523030008125_3609193961566985359_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=4kRFxuOlk8MAX9C3thZ&oh=a1056f1632f10539369fcf047311c9c2&oe=5F1BC4ED"
+            alt="oslo"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/44887347_285058299021034_8005548442703639199_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=JNb2gQpVfsAAX_KtYf6&oh=43049dc2816e6658571a0423dc9dd349&oe=5F1A2218"
+            alt="barcelona"
+          />
+          <div class="gallery-item-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cumque delectus modi repellat tempore non excepturi culpa tenetur
+              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
+              nobis? Accusamus, molestias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="js-clock clock">
+        <h1>00:00:00</h1>
+      </div>
+      <form class="js-nameForm nameForm">
+        <input type="text" placeholder="What is your name?" size="16" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <div class="todoContainer">
+        <img
+          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/65825808_433492277264193_7750440417123961839_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=oOY2HbB6kr0AX80pDIY&oh=59f76155c70f8d74ca6e98b3d595284b&oe=5F1C2956"
+          alt="a cup on a bench"
+        />
+        <form class="js-todoForm todoForm">
+          <input
+            type="text"
+            placeholder="What are you going to do?"
+            size="22"
+          />
+        </form>
+        <ul class="js-todoList todoList"></ul>
+      </div>
+
+      <div class="portfolioContainer"></div>
     </section>
   </body>
 </html>
