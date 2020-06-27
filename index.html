@@ -9,7 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=MuseoModerno&family=Roboto&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Pangolin&family=Source+Sans+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
     <title>Hello! I am Yeognseob!</title>
     <script
       src="https://kit.fontawesome.com/f3e63056eb.js"
@@ -23,20 +30,23 @@
   <body>
     <nav class="navbar">
       <div class="navbar__logo">
-        <a href="#"><i class="far fa-id-card"></i></a>
-        <a href="#">Home</a>
+        <a href="#">
+          <img
+            class="homeLogo"
+            src="https://raw.githubusercontent.com/seobie/self-introduction/e0c40cca0e42b14f436be75272f40f6efe08228e/merong.png"
+            alt="memoji"
+          />
+        </a>
       </div>
       <ul class="navbar__menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#favorites">Favorites</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a target="_blank" href="https://velog.io/@seob">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="menuAbout"><a href="#about">About</a></li>
+        <li class="menuFavorites"><a href="#favorites">Favorites</a></li>
+        <li class="menuPortfolio"><a href="#portfolio">Portfolio</a></li>
       </ul>
       <ul class="navbar__icons">
         <li>
           <a target="_blank" href="https://github.com/seobie"
-            ><i class="fab fa-github"></i><span>Github</span></a
+            ><i class="fab fa-github"></i><span>GitHub</span></a
           >
         </li>
         <li>
@@ -45,7 +55,19 @@
           >
         </li>
         <li>
-          <a href="#"><i class="fas fa-at"></i><span>Mail</span></a>
+          <a target="_blank" href="https://velog.io/@seob">
+            <svg width="24" height="24" viewBox="0 0 192 150" fill="none">
+              <rect width="24" height="24" fill="none" rx="24"></rect>
+              <path
+                d="M49 65.48V57.92C53.8 56.36 59.44 54.68 65.92 52.88C72.4 50.96 76.78 50 79.06 50C84.1 50 87.1 52.4 88.06 57.2L99.76 123.62C103.48 118.7 106.54 114.56 108.94 111.2C112.66 105.92 116.08 99.86 119.2 93.02C122.44 86.18 124.06 80.06 124.06 74.66C124.06 71.42 123.16 68.84 121.36 66.92C119.68 64.88 116.5 62.3 111.82 59.18C116.62 53.06 122.62 50 129.82 50C133.66 50 136.84 51.14 139.36 53.42C142 55.7 143.32 59.06 143.32 63.5C143.32 70.94 140.2 80.24 133.96 91.4C127.84 102.44 116.02 119.06 98.5 141.26L80.68 142.52L67 65.48H49Z"
+                fill="black"
+              ></path>
+            </svg>
+            <span>velog</span></a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-at"></i><span>not working yet</span></a>
         </li>
       </ul>
       <input type="checkbox" id="hamburgerCheck" />
@@ -89,7 +111,7 @@
           />
           <video controls muted autoplay loop>
             <source
-              src="https://scontent-gmp1-1.cdninstagram.com/v/t50.2886-16/57221981_369972506946857_3452874999173709393_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jYXJvdXNlbF9pdGVtLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=LPGb8rm8NekAX9f4RfR&vs=17919113284294347_2257342927&_nc_vs=HBksFQAYJEdGMGphUU1wYmRydmZGQUJBRkZfazRPRUVfc3Zia1lMQUFBRhUAAsgBABUAGCRHUGVNWndOd2NwbzNQM1FFQU5ZeFRzNVBYemN1YmtZTEFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMBUAABgAFtyY%2Bpyy%2F4RAFQIoAkMzLBdAJWFHrhR64RgSZGFzaF9iYXNlbGluZV8xX3YxEQB17gcA&_nc_rid=e0837aa3b3&oe=5EF4F6C9&oh=fa9b0b620862c14a05d6b73287d5ab4e"
+              src="https://scontent-gmp1-1.cdninstagram.com/v/t50.2886-16/57221981_369972506946857_3452874999173709393_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jYXJvdXNlbF9pdGVtLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=muUMmbre2fsAX_BPUBc&vs=17919113284294347_2257342927&_nc_vs=HBksFQAYJEdGMGphUU1wYmRydmZGQUJBRkZfazRPRUVfc3Zia1lMQUFBRhUAAsgBABUAGCRHUGVNWndOd2NwbzNQM1FFQU5ZeFRzNVBYemN1YmtZTEFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMBUAABgAFtyY%2Bpyy%2F4RAFQIoAkMzLBdAJWFHrhR64RgSZGFzaF9iYXNlbGluZV8xX3YxEQB17gcA&_nc_rid=a57dbd7d35&oe=5EF84289&oh=8d909d0e1259b320b7ea27ab4b8f8091"
               type="video/mp4"
             />
             Sorry, your browser doesn't support embedded videos.
@@ -100,19 +122,21 @@
             <h3>About me</h3>
             <h2>Who Am I</h2>
             <p>
-              코딩에 ㅋ 도 모르지만 개발자가 되어보려고 합니다. 백엔드에 관심이
+              코딩은 1도 도 모르지만 개발자가 되어보려고 합니다. 백엔드에 관심이
               있지만 이 페이지를 만들어보면서 프론트엔드도 재미있을것 같다고
-              느끼는 중입니다.. 😅
-              <br />여행다니는걸 좋아하고 먹는것도 좋아하지만 놀러가서 먹는건 더
+              느끼는 중입니다.. 😅 풀스택..?
+            </p>
+            <p>
+              여행다니는걸 좋아하고 먹는것도 좋아하지만 놀러가서 먹는건 더
               좋습니다. 🐷
             </p>
             <p>
-              위코드에서 좋은 인연, 기억, 실력 모두 만들어가고 싶습니다.🙆🏻‍♂️<br />저도
+              위코드에서 좋은 인연, 추억, 실력 모두 만들어가고 싶습니다.🙆🏻‍♂️<br />저도
               누군가에게 좋은 인연이 될 수 있도록 노력해보겠습니다.🙇🏻‍♂️
             </p>
           </div>
-          <div class="container">
-            <div class="item item1">
+          <div class="skillContainer">
+            <div class="skillItems item1">
               <h4>HTML</h4>
               <p>
                 <i class="fas fa-star"></i><i class="far fa-star"></i
@@ -120,7 +144,7 @@
                 ><i class="far fa-star"></i>
               </p>
             </div>
-            <div class="item item2">
+            <div class="skillItems item2">
               <h4>CSS</h4>
               <p>
                 <i class="fas fa-star"></i><i class="far fa-star"></i
@@ -128,7 +152,7 @@
                 ><i class="far fa-star"></i>
               </p>
             </div>
-            <div class="item item3">
+            <div class="skillItems item3">
               <h4>JavaScript</h4>
               <p>
                 <i class="fas fa-star"></i><i class="far fa-star"></i
@@ -136,7 +160,7 @@
                 ><i class="far fa-star"></i>
               </p>
             </div>
-            <div class="item item4">
+            <div class="skillItems item4">
               <h4>Python</h4>
               <p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i
@@ -144,7 +168,7 @@
                 ><i class="far fa-star"></i>
               </p>
             </div>
-            <div class="item item5">
+            <div class="skillItems item5">
               <h4>Django</h4>
               <p>
                 <i class="far fa-star"></i><i class="far fa-star"></i
@@ -152,7 +176,7 @@
                 ><i class="far fa-star"></i>
               </p>
             </div>
-            <div class="item item6">
+            <div class="skillItems item6">
               <h4>SQL</h4>
               <p>
                 <i class="far fa-star"></i><i class="far fa-star"></i
@@ -160,7 +184,7 @@
                 ><i class="far fa-star"></i>
               </p>
             </div>
-            <div class="item item7">
+            <div class="skillItems item7">
               <h4>English</h4>
               <p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i
@@ -168,7 +192,7 @@
                 ><i class="far fa-star"></i>
               </p>
             </div>
-            <div class="item item8">
+            <div class="skillItems item8">
               <h4>Korean</h4>
               <p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i
@@ -176,7 +200,7 @@
                 ><i class="fas fa-star"></i>
               </p>
             </div>
-            <div class="item item9">
+            <div class="skillItems item9">
               <h4>Sleep</h4>
               <p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i
@@ -197,12 +221,7 @@
             alt="budapest"
           />
           <div class="gallery-item-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
-            </p>
+            <p>🇭🇺<br />Budapest</p>
           </div>
         </div>
         <div class="gallery-item">
@@ -211,12 +230,7 @@
             alt="korea"
           />
           <div class="gallery-item-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
-            </p>
+            <p>🇰🇷<br />🙆🏻‍♂️</p>
           </div>
         </div>
         <div class="gallery-item">
@@ -225,12 +239,7 @@
             alt="iceland"
           />
           <div class="gallery-item-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
-            </p>
+            <p>🇮🇸<br />Iceland</p>
           </div>
         </div>
         <div class="gallery-item">
@@ -239,12 +248,7 @@
             alt="boracay"
           />
           <div class="gallery-item-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
-            </p>
+            <p>🇵🇭<br />Boracay</p>
           </div>
         </div>
         <div class="gallery-item">
@@ -254,10 +258,7 @@
           />
           <div class="gallery-item-info">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
+              🐶
             </p>
           </div>
         </div>
@@ -268,10 +269,7 @@
           />
           <div class="gallery-item-info">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
+              Geyser in 🇮🇸
             </p>
           </div>
         </div>
@@ -281,12 +279,7 @@
             alt="kyoto"
           />
           <div class="gallery-item-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
-            </p>
+            <p>🇯🇵<br />Kyoto</p>
           </div>
         </div>
         <div class="gallery-item">
@@ -295,12 +288,7 @@
             alt="oslo"
           />
           <div class="gallery-item-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
-            </p>
+            <p>🇳🇴<br />Oslo</p>
           </div>
         </div>
         <div class="gallery-item">
@@ -309,36 +297,45 @@
             alt="barcelona"
           />
           <div class="gallery-item-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              cumque delectus modi repellat tempore non excepturi culpa tenetur
-              alias quidem sapiente doloribus quasi minima unde, sunt deleniti
-              nobis? Accusamus, molestias.
-            </p>
+            <p>🇪🇸<br />Barcelona</p>
           </div>
         </div>
       </div>
     </section>
     <section id="portfolio">
-      <div class="js-clock clock">
-        <h1>00:00:00</h1>
-      </div>
       <form class="js-nameForm nameForm">
-        <input type="text" placeholder="What is your name?" size="16" />
+        <input
+          class="js-nameInput"
+          type="text"
+          placeholder="What is your name?"
+          size="18"
+        />
+        <button class="js-signInBtn signInBtn" type="submit">
+          <i class="fas fa-sign-in-alt"></i>
+        </button>
       </form>
       <h4 class="js-greetings greetings"></h4>
       <div class="todoContainer">
+        <div class="js-clock clock">
+          <p>00:00:00</p>
+        </div>
         <img
           src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/65825808_433492277264193_7750440417123961839_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=oOY2HbB6kr0AX80pDIY&oh=59f76155c70f8d74ca6e98b3d595284b&oe=5F1C2956"
           alt="a cup on a bench"
         />
-        <form class="js-todoForm todoForm">
-          <input
-            type="text"
-            placeholder="What are you going to do?"
-            size="22"
-          />
-        </form>
+        <div class="todoInputContainer">
+          <form class="js-todoForm todoForm">
+            <input
+              class="js-todoInput"
+              type="text"
+              placeholder="What are you going to do?"
+              size="24"
+            />
+          </form>
+          <button class="js-addTodoBtn addTodoBtn" type="submit">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </div>
         <ul class="js-todoList todoList"></ul>
       </div>
 
