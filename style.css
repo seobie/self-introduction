@@ -206,7 +206,7 @@ body {
 
 .main_1 {
   /* position: absolute; */
-  background-image: url(https://github.com/seobie/self-introduction/blob/master/20180620_184810.jpg?raw=true);
+  background-image: url(images/main.jpg);
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
